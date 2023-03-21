@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./instafeed.min.js" defer></script>
   <title>Document</title>
 </head>
 <body>
   <h1>인스타그램 test입니다</h1>
-  <div id="instafeed"></div>
+  <div id="gallery"></div>
 </body>
+<script src="instafeed.min.js"></script>
 <script type="text/javascript">
   var feed = new Instafeed({
-    accessToken: 'IGQVJXYWtFaHdUaEpCVUQwWWphQjRKSjF4TXgtRGtIRVdfbzhGdEl0VERYVjVTRUd3TjFkLUlMVEZAodnFnRGZAsSWlQdDBUblB2OWNkX29FOVM4aVdVaFVmM250N0tpUUlLd1RjQkROYmtlbldrck1LOQZDZD' 
+    target:"gallery",
+    accessToken: 'IGQVJWQXdYNENMLUZASQWtsMkptUlhEazlzeF9IbTBGOTVZASm8yYzgzNUxfcXpRVXk2YklhbENpcld1MzJWbVFNdFVvRzBfWTZAXWUNGcTlwNWhhcE1MelVvcV8xVFlTZADFUMm1MOU9IRGhOLXBJWmlmcQZDZD' 
   });
   feed.run();
 </script>
