@@ -7,15 +7,21 @@
   <title>Document</title>
 </head>
 <body>
+  <style>
+    h1{
+      text-align: center;
+      padding:50px 0
+    }
+  </style>
   <h1>인스타그램 test입니다</h1>
-  <div id="gallery"></div>
+  <div id="instafeed"></div>
+  
+  <script src="instafeed.min.js"></script>
+  <script type="text/javascript">
+      var feed = new Instafeed({
+        accessToken: 'your-token'
+      });
+      feed.run();
+  </script>
 </body>
-<script src="instafeed.min.js"></script>
-<script type="text/javascript">
-  var feed = new Instafeed({
-    target:"gallery",
-    accessToken: 'IGQVJWQXdYNENMLUZASQWtsMkptUlhEazlzeF9IbTBGOTVZASm8yYzgzNUxfcXpRVXk2YklhbENpcld1MzJWbVFNdFVvRzBfWTZAXWUNGcTlwNWhhcE1MelVvcV8xVFlTZADFUMm1MOU9IRGhOLXBJWmlmcQZDZD' 
-  });
-  feed.run();
-</script>
 </html>
